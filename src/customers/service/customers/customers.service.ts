@@ -22,4 +22,8 @@ export class CustomerService {
   findById(id: number) {
     return this.users.find((user) => user.id === id);
   }
+
+  searchCustomerById(id: number) {
+    return this.findById(id);
+  }
 }
